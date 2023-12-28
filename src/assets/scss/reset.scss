@@ -1,0 +1,72 @@
+// Global Reset
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+abbr,
+address,
+b,
+em,
+img,
+small,
+strong,
+sub,
+sup,
+button,
+input,
+select,
+textarea,
+blockquote,
+fieldset,
+figure,
+hr,
+pre {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Remove default list styling */
+ul, ol {
+  list-style: none;
+}
+
+/* Set the box sizing to border-box by default */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin for the body */
+body {
+  line-height: 1;
+}
+
+/* Remove border on images inside links */
+img {
+  border-style: none;
+}
+
+/* Remove default button styling */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Remove the outline on focus for some browsers */
+a:focus, button:focus {
+  outline: none;
+}
+
+/* Add your custom styles below this line */

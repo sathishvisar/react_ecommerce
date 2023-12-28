@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { lazy } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import './App.scss'
+
+const Web = lazy(()=>import("@components/layout/WebLayout"))
+const Home = lazy(()=>import("@pages/Home"))
+const Shop = lazy(()=>import("@pages/Shop"))
+const About = lazy(()=>import("@pages/About"))
+const Contact = lazy(()=>import("@pages/Contact"))
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter basename='/'>
+          <Routes>
+            <Route path='/' exact element={<Web element={<Home />} />} />
+            <Route path='/shop' element={<Web element={<Shop />} />} />
+            <Route path='/about' element={<Web element={<About />} />} />
+            <Route path='/contact' element={<Web element={<Contact />} />} />
+          </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

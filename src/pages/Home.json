@@ -1,0 +1,28 @@
+{
+    "main_section":{
+        "title": "Lorem ipsum dolor",
+        "description": "Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.",
+        "action": "Shop now",
+        "img": null
+    },
+    "about_section":{
+        "title": "About Us",
+        "description_1": "Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.",
+        "description_2": "Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.Lorem ipsum dolor sit amet consectetur. Eu nulla elementum vulputate quam. Amet bibendum pellentesque molestie morbi nibh aliquam consectetur elit. Morbi in rutrum eu lectus sit a ipsum risus ultrices.",
+        "action": "Shop now",
+        "bg_img": null
+    },
+    "email_subscribe":{
+        "title": "Keep in touch",
+        "sub_title": "Lorem ipsum dolor sit amet consectetur",
+        "action": "Subscribe"
+    },
+    "product_categories":{
+        "title": "Categories",
+        "sub_title": "Lorem ipsum dolor sit amet consectetur"
+    },
+    "products":{
+        "title": "Trending products",
+        "sub_title": "Lorem ipsum dolor sit amet consectetur"
+    }
+}

@@ -1,0 +1,52 @@
+.footer {
+    padding: 75px 0;
+    h6 {
+        color: #222;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 13px;
+    }
+    .col {
+        color: #222;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 0 16px;
+    }
+    .navi {
+        ul {
+            li {
+                line-height: 28px;
+            }
+        }
+    }
+    .contact {
+        p {
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        .socialMedia {
+            display: flex;
+            gap: 10px;
+            svg {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .app {
+        .appStore {
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .cards{
+            margin-top: 14px;
+        }
+    }
+}

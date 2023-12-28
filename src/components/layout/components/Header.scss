@@ -1,0 +1,30 @@
+.header {
+    min-height: 72px;
+    .navi-cart {
+        gap: 40px;
+        .navi {
+            ul {
+                margin: unset;
+                display: inline-flex;
+                flex-direction: row;
+                box-sizing: border-box;
+                display: flex;
+                place-content: center space-around;
+                align-items: center;
+                gap: 40px;
+                li {
+                    color: #222;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    cursor: pointer;
+                }
+            }
+        }
+        .cart {
+    
+        }
+    }
+}

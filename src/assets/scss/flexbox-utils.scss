@@ -1,0 +1,99 @@
+// flexbox-utils.scss
+
+.d-flex {
+    display: flex;
+}
+
+.flex-row {
+    @extend .d-flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    @extend .d-flex;
+    flex-direction: column;
+}
+
+.flex-row-reverse {
+    @extend .d-flex;
+    flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+    @extend .d-flex;
+    flex-direction: column-reverse;
+}
+
+.flex-wrap {
+    @extend .d-flex;
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    @extend .d-flex;
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+    @extend .d-flex;
+    flex-wrap: wrap-reverse;
+}
+
+// Align items
+
+.flex-align-start {
+    @extend .d-flex;
+    align-items: flex-start;
+}
+
+.flex-align-center {
+    @extend .d-flex;
+    align-items: center;
+}
+
+.flex-align-end {
+    @extend .d-flex;
+    align-items: flex-end;
+}
+
+.flex-align-baseline {
+    @extend .d-flex;
+    align-items: baseline;
+}
+
+.flex-align-stretch {
+    @extend .d-flex;
+    align-items: stretch;
+}
+
+// Justify content
+
+.flex-justify-start {
+    @extend .d-flex;
+    justify-content: flex-start;
+}
+
+.flex-justify-center {
+    @extend .d-flex;
+    justify-content: center;
+}
+
+.flex-justify-end {
+    @extend .d-flex;
+    justify-content: flex-end;
+}
+
+.flex-justify-between {
+    @extend .d-flex;
+    justify-content: space-between;
+}
+
+.flex-justify-around {
+    @extend .d-flex;
+    justify-content: space-around;
+}
+
+.flex-justify-evenly {
+    @extend .d-flex;
+    justify-content: space-evenly;
+}
