@@ -18,10 +18,20 @@
         line-height: normal;
         padding: 0 16px;
     }
+    .logo{
+        img {
+            cursor: pointer;
+        }
+    }
     .navi {
         ul {
             li {
                 line-height: 28px;
+                a {
+                    cursor: pointer;
+                    color: #000;
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -29,6 +39,7 @@
         p {
             line-height: 28px;
             margin-bottom: 16px;
+            font-style: italic;
         }
         .socialMedia {
             display: flex;

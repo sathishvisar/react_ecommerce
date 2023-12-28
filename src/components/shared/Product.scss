@@ -1,13 +1,13 @@
 .product {
-    border-radius: 20px;
+    border-radius: 13px;
     background: #FFF;
-    box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1.3px 2.6px 6.501px 0px rgba(0, 0, 0, 0.25);
     .image {
         height: 190px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        border-radius: 0px 0px 30px 0px;
+        border-radius: 13px 13px 13px 0px;
     }
     .info {
         padding: 10px;
@@ -26,6 +26,22 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+        }
+        .productRating{
+            margin-bottom: 8px;
+        }
+        .addTocart {
+            border-radius: 13px;
+            background: #E6ECF2;
+            box-shadow: 2.612px 5.225px 6.531px 0px rgba(17, 70, 131, 0.25);
+            display: flex;
+            width: 40.49px;
+            height: 35.265px;
+            padding: 5.224px 7.837px 6.531px 9.143px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            cursor: pointer;
         }
         
     }
