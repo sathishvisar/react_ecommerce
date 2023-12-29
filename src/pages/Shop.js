@@ -1,8 +1,10 @@
 import React from "react";
-import Typography from '@components/common/Typography'
+import EmailSubscribe from "@components/sections/EmailSubscribe";
+
+import data from './data.json';
 
 export default function Shop () {
     return <>
-        <Typography variant="h3">Shop</Typography>
+            <EmailSubscribe data={data['email_subscribe']} />
     </>
 }

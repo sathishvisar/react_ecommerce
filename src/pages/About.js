@@ -1,8 +1,15 @@
 import React from "react";
-import Typography from '@components/common/Typography'
+import EmailSubscribe from "@components/sections/EmailSubscribe";
+import BannerFullwidth from "@components/sections/BannerFullwidth";
+import TwoColRightImage from "@components/sections/TwoColRightImage";
+import data from './data.json';
 
 export default function About () {
     return <>
-    <Typography variant="h3">About us</Typography>
+        <BannerFullwidth data={data['about_banner']} />
+
+        <TwoColRightImage data={data['about_two_col']} />
+
+        <EmailSubscribe data={data['email_subscribe']} />
     </>
 }

@@ -1,0 +1,13 @@
+.bannerFullwidth {
+    border-radius: 20px;
+    background-size: cover;
+    min-height: 310px;
+    background-position: center center;
+    margin: 75px 0px;
+    .content {
+        margin: 0px auto;
+        h2, p{
+            color: #FFF !important;
+        }
+    }
+}

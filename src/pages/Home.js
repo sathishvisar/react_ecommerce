@@ -5,7 +5,7 @@ import EmailSubscribe from "@components/sections/EmailSubscribe";
 import ProductCategories from "@components/sections/ProductCategories";
 import Products from "@components/sections/Products";
 
-import data from './Home.json';
+import data from './data.json';
 
 export default function Home () {
     return <>
