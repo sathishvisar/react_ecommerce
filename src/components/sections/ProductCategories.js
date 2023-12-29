@@ -9,7 +9,7 @@ import "./ProductCategories.scss"
 export default function ProductCategories (props) {
     const {title, sub_title} = props.data
     return <Grid container className={classnames('section productCategories')}>
-        <Grid  xs={12} className={classnames('header text-center')}>
+        <Grid xs={12} item className={classnames('header text-center')}>
             <Typography variant="h2">{title}</Typography>
             <Typography variant="p">{sub_title}</Typography>
         </Grid>

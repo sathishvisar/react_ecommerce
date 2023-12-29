@@ -1,7 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 import { Link } from 'react-router-dom';
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from "@mui/material/Grid";
 import Logo from '@assets/images/logo.png';
 import google_play from '@assets/images/google_play.png';
 import apple from '@assets/images/apple.png';

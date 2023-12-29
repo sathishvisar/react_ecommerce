@@ -19,6 +19,12 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+                    &.active{
+                        a {
+                            color: #114683;
+                            font-weight: 500;
+                        }
+                    }
                     a {
                         cursor: pointer;
                         color: #000;

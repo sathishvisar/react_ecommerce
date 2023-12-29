@@ -1,5 +1,5 @@
 import React from "react";
-import MainSection from "@components/sections/MainSection";
+import HomeSlider from "@components/sections/HomeSlider";
 import ContentOneColWithBg from "@components/sections/ContentOneColWithBg";
 import EmailSubscribe from "@components/sections/EmailSubscribe";
 import ProductCategories from "@components/sections/ProductCategories";
@@ -9,14 +9,14 @@ import data from './Home.json';
 
 export default function Home () {
     return <>
-        <MainSection data={data['main_section']} />
+            <HomeSlider data={data['main_section']} />
 
-        <ContentOneColWithBg data={data['about_section']} />
+            <ContentOneColWithBg data={data['about_section']} />
 
-        <ProductCategories data={data['product_categories']} />
+            <ProductCategories data={data['product_categories']} />
 
-        <Products data={data['products']} />
+            <Products data={data['products']} />
 
-        <EmailSubscribe data={data['email_subscribe']} />
+            <EmailSubscribe data={data['email_subscribe']} />
     </>
 }

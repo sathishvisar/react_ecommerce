@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.scss'
 
+const ErrorBoundary = lazy(()=>import("@components/common/ErrorBoundary"))
 const WebLayout = lazy(()=>import("@layouts/WebLayout"))
 const Home = lazy(()=>import("@pages/Home"))
 const Shop = lazy(()=>import("@pages/Shop"))
@@ -12,6 +13,7 @@ const Contact = lazy(()=>import("@pages/Contact"))
 function App() {
   return (
     <>
+      <ErrorBoundary>
       <BrowserRouter basename='/'>
           <Routes>
             <Route path='/' exact element={<WebLayout element={<Home />} />} />
@@ -20,6 +22,7 @@ function App() {
             <Route path='/contact' element={<WebLayout element={<Contact />} />} />
           </Routes>
       </BrowserRouter>
+      </ErrorBoundary>
     </>
   );
 }
