@@ -1,7 +1,8 @@
 import React from "react";
+import Typography from '@components/common/Typography'
 
 export default function Contact () {
     return <>
-    <h3>Contact</h3>
+    <Typography variant="h3">Contact</Typography>
     </>
 }

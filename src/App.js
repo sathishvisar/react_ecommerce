@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.scss'
 
-const Web = lazy(()=>import("@components/layout/WebLayout"))
+const WebLayout = lazy(()=>import("@layouts/WebLayout"))
 const Home = lazy(()=>import("@pages/Home"))
 const Shop = lazy(()=>import("@pages/Shop"))
 const About = lazy(()=>import("@pages/About"))
@@ -14,10 +14,10 @@ function App() {
     <>
       <BrowserRouter basename='/'>
           <Routes>
-            <Route path='/' exact element={<Web element={<Home />} />} />
-            <Route path='/shop' element={<Web element={<Shop />} />} />
-            <Route path='/about' element={<Web element={<About />} />} />
-            <Route path='/contact' element={<Web element={<Contact />} />} />
+            <Route path='/' exact element={<WebLayout element={<Home />} />} />
+            <Route path='/shop' element={<WebLayout element={<Shop />} />} />
+            <Route path='/about' element={<WebLayout element={<About />} />} />
+            <Route path='/contact' element={<WebLayout element={<Contact />} />} />
           </Routes>
       </BrowserRouter>
     </>

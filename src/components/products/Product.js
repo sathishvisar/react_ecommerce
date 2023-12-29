@@ -2,6 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import Rating from '@mui/material/Rating';
 import IconAddToCart from '@components/icons/IconAddToCart';
+import Typography from "@components/common/Typography"
 import BgImage from '@assets/images/category.png';
 import "./Product.scss"
 
@@ -13,7 +14,7 @@ export default function Product (props) {
 
         </div>
         <div className="info">
-            <h4>{name || 'Name'}</h4>
+            <Typography variant="h4">{name || 'Name'}</Typography>
             <div className={classnames('d-flex flex-align-center flex-justify-between')}>
                 <Rating
                     className="productRating"
@@ -23,8 +24,7 @@ export default function Product (props) {
                 />
                 <span className="addTocart"><IconAddToCart /></span>
             </div>
-            
-            <h6>$ {price || 0}</h6>
+            <span className="price">$ {price || 0}</span>
         </div>
     </div>
 }

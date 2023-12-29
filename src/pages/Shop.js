@@ -1,7 +1,8 @@
 import React from "react";
+import Typography from '@components/common/Typography'
 
 export default function Shop () {
     return <>
-        <h3>Shop</h3>
+        <Typography variant="h3">Shop</Typography>
     </>
 }

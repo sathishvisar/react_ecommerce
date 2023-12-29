@@ -1,4 +1,4 @@
-.header {
+.mainHeader {
     min-height: 72px;
     .navi-cart {
         gap: 40px;
@@ -19,7 +19,11 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    cursor: pointer;
+                    a {
+                        cursor: pointer;
+                        color: #000;
+                        text-decoration: none;
+                    }
                 }
             }
         }

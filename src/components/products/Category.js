@@ -1,6 +1,8 @@
 import React from "react";
 import classnames from "classnames";
 import BgImage from '@assets/images/category.png';
+import Typography from '@components/common/Typography';
+
 import "./Category.scss"
 
 export default function Category (props) {
@@ -11,8 +13,8 @@ export default function Category (props) {
 
         </div>
         <div className="info">
-            <h4>{name || 'Category'}</h4>
-            <h6>{count || 0}</h6>
+            <Typography variant="h3">{name || 'Category'}</Typography>
+            <span className="count">{count || 0}</span>
         </div>
     </div>
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import Logo from '@assets/images/logo.png';
 import google_play from '@assets/images/google_play.png';
@@ -20,11 +21,9 @@ export default function Footer () {
         <Grid item xs={12} sm={12} md={6} lg={3} className={classnames('col navi')}>
             <h6>Navigation</h6>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Categories</li>
-                <li>Testimonial</li>
-                <li>TestiContactmonial</li>
+                <li><Link to="/shop">Shop</Link></li>
+                <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={3} className={classnames('col contact')}>

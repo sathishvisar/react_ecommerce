@@ -1,7 +1,8 @@
 import React from "react";
+import Typography from '@components/common/Typography'
 
 export default function Cart () {
     return <>
-    <h3>Cart</h3>
+    <Typography variant="h3">Cart</Typography>
     </>
 }
