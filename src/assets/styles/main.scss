@@ -10,9 +10,22 @@ ul {
 
 .section {
     padding: 75px 0;
-    .header {
-        .content {
-
+    &.two-col {
+        .content{
+            padding-right: 16px;
+        }
+    }
+    .content {
+        h3 {
+            margin-bottom: 18px;
+        }
+        p {
+            color: rgba(0, 0, 0, 0.70);
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
         }
     }
 }
