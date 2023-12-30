@@ -10,6 +10,8 @@ export default function About () {
 
         <TwoColRightImage data={data['about_two_col']} />
 
-        <EmailSubscribe data={data['email_subscribe']} />
+        <EmailSubscribe
+            title='Keep in touch'
+            sub_title='Lorem ipsum dolor sit amet consectetur' />
     </>
 }

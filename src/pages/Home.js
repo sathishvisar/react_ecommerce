@@ -15,8 +15,14 @@ export default function Home () {
 
             <ProductCategories data={data['product_categories']} />
 
-            <Products data={data['products']} />
+            <Products 
+                title='Trending products'
+                sub_title='Lorem ipsum dolor sit amet consectetur'
+                layout='slick_layout'
+                type='trending' />
 
-            <EmailSubscribe data={data['email_subscribe']} />
+            <EmailSubscribe
+                title='Keep in touch'
+                sub_title='Lorem ipsum dolor sit amet consectetur' />
     </>
 }

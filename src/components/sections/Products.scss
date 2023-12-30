@@ -1,16 +1,19 @@
 .productsContainer {
     padding: 75px 0;
+    &.slick_layout{
+        .products {
+            .product {
+                min-width: 230px;
+                margin-right: 55px;
+            }
+        }
+    }
     .content{
         h2{
             margin-bottom: 5px;
         }
         .products {
-            margin-top: 55px;
-            padding: 30px;
-            .product {
-                min-width: 230px;
-                margin-right: 55px;
-            }
+            padding: 20px 0;
         }
     }
 }
