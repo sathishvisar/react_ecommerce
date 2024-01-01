@@ -16,7 +16,7 @@ import './Footer.scss'
 export default function Footer () {
     return <Grid container className="footer">
         <Grid item xs={12} sm={12} md={6} lg={2} className={classnames('col logo')}>
-            <img src={Logo} alt="Your Alt Text" height="90px" />
+            <Link to="/"><img src={Logo} alt="Your Alt Text" height="90px" /></Link>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={3} className={classnames('col navi')}>
             <h6>Navigation</h6>

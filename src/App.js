@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Provider } from 'react-redux'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import CircularProgress from '@mui/material/CircularProgress';
 import { AppStore } from './store/index'
 
 import './App.scss'
@@ -15,7 +16,7 @@ const Contact = lazy(()=>import("@pages/Contact"))
 function App() {
   return (
     <>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className='appLoader'><CircularProgress /></div>}>
         <ErrorBoundary>
           <Provider store={AppStore}>
             <BrowserRouter basename='/'>

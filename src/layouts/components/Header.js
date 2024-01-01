@@ -11,7 +11,7 @@ export default function Header () {
     const currentPath = location.pathname;
     return <Grid container className="mainHeader">
         <Grid item sm={6} md={6} className={classnames('logo d-flex flex-align-center flex-justify-start')}>
-            <img src={Logo} alt="Your Alt Text" height="90px" />
+            <Link to="/"><img src={Logo} alt="Your Alt Text" height="90px" /></Link>
         </Grid>
         <Grid item sm={6} md={6} className={classnames('navi-cart d-flex flex-align-center flex-justify-end')}>
             <div className={classnames('navi d-flex flex-align-center')}>
