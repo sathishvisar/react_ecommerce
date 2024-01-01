@@ -8,7 +8,7 @@ const Typography = ({ variant, children, ...restProps }) => {
         return { 
           color: '#903D10',
           fontFamily: 'Roboto',
-          fontSize: '60px',
+          fontSize: '54px',
           fontStyle: 'normal',
           fontWeight: 700,
           lineHeight: 'normal'
@@ -18,7 +18,7 @@ const Typography = ({ variant, children, ...restProps }) => {
         return { 
           color: '#222',
           fontFamily: 'Roboto',
-          fontSize: '42px',
+          fontSize: '36px',
           fontStyle: 'normal',
           fontWeight: 700,
           lineHeight: 'normal',
@@ -29,7 +29,7 @@ const Typography = ({ variant, children, ...restProps }) => {
         return {
           color: '#222',
           fontFamily: 'Roboto',
-          fontSize: '32px',
+          fontSize: '22px',
           fontStyle: 'normal',
           fontWeight: 600,
           lineHeight: 'normal'
