@@ -12,6 +12,11 @@
     }
     .info {
         padding: 20px 0 30px;
+        h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         .count {
             color: #114683;
             font-family: Roboto;

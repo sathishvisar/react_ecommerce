@@ -1,5 +1,7 @@
 import { lazy } from 'react';
+import { Provider } from 'react-redux'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { AppStore } from './store/index'
 
 import './App.scss'
 
@@ -14,14 +16,16 @@ function App() {
   return (
     <>
       <ErrorBoundary>
-      <BrowserRouter basename='/'>
-          <Routes>
-            <Route path='/' exact element={<WebLayout element={<Home />} />} />
-            <Route path='/shop' element={<WebLayout element={<Shop />} />} />
-            <Route path='/about' element={<WebLayout element={<About />} />} />
-            <Route path='/contact' element={<WebLayout element={<Contact />} />} />
-          </Routes>
-      </BrowserRouter>
+        <Provider store={AppStore}>
+          <BrowserRouter basename='/'>
+              <Routes>
+                <Route path='/' exact element={<WebLayout element={<Home />} />} />
+                <Route path='/shop' element={<WebLayout element={<Shop />} />} />
+                <Route path='/about' element={<WebLayout element={<About />} />} />
+                <Route path='/contact' element={<WebLayout element={<Contact />} />} />
+              </Routes>
+          </BrowserRouter>
+        </Provider>
       </ErrorBoundary>
     </>
   );

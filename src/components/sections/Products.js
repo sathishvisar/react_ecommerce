@@ -1,31 +1,35 @@
-import React from "react";
+import React, {useEffect, useState } from "react";
 import classnames from "classnames";
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
 import { Grid } from "@mui/material";
 import Pagination from "@components/common/Pagination"
 import Product from "@components/products/Product"
 import Typography from "@components/common/Typography"
+import { FetchProducts } from '@store/products/action';
+
 import "./Products.scss"
+function Products (props) {
+    const {  layout, type, title, sub_title, fetchProducts, products, productsError, productsLoading, productsTotal } = props;
+    
+    const [page, setPage] = useState(1)
+    const [limit, setLimit] = useState(10)
+    const handlePageChange = (page) => {};
 
-// const prducts_info = {
-//     'all': 'All product',
-//     'new': 'New arrivals',
-//     'trending': 'Trending products'
-// }
-
-function Products ({layout, title, sub_title}) {
-
-    const handlePageChange = (page) => {
-
-    };
-
-    const totalItems = 20;
+    useEffect(() => {
+        let query = {
+            type,
+            page,
+            limit
+        }
+        fetchProducts(query)
+    }, [fetchProducts])
     
     return <Grid container className={classnames('section productsContainer', layout)}>
         <Grid xs={12} item className={classnames('header', layout === 'slick_layout' ? 'text-center' : '')}>
             <Typography variant="h2">{title}</Typography>
             {layout === 'slick_layout' || sub_title ? (
-                <Typography variant="body1">{sub_title}</Typography>
+                <Typography variant="p">{sub_title}</Typography>
             ) : null}
         </Grid>
         <Grid xs={12} item className={classnames('content')}>
@@ -34,17 +38,29 @@ function Products ({layout, title, sub_title}) {
                 spacing={3} 
                 wrap={layout === 'slick_layout' ? 'nowrap' : undefined}
                 style={{ overflowX: 'auto' }}>
-                {[1, 2, 3, 4, 5, 6].map((item, index) => (
-                    <Grid key={index} item xs={12} sm={6} md={4} lg={3}><Product key={item} /></Grid>
+                {products && products.map((item, index) => (
+                    <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
+                        <Product product={item} />
+                    </Grid>
                 ))}
             </Grid>
         </Grid>
-        <Grid xs={12} item className={classnames('pagination')}>
+        { products?.length > limit && <Grid xs={12} item className={classnames('pagination')}>
             <Pagination
-                totalItems={totalItems} 
+                totalItems={productsTotal} 
                 onPageChange={handlePageChange} />
-        </Grid>
+        </Grid> }
     </Grid>
+}
+
+const mapStateToProps = (state) => {
+    return { ...state.products }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+      fetchProducts: (params) => dispatch(FetchProducts(params))
+    }
 }
 
 Products.propTypes = {
@@ -60,4 +76,4 @@ Products.defaultProps = {
     type: 'all'
 }
 
-export default Products
+export default connect(mapStateToProps, mapDispatchToProps)(Products)
