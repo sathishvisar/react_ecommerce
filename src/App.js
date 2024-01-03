@@ -10,6 +10,7 @@ const ErrorBoundary = lazy(()=>import("@components/common/ErrorBoundary"))
 const WebLayout = lazy(()=>import("@layouts/WebLayout"))
 const Home = lazy(()=>import("@pages/Home"))
 const Shop = lazy(()=>import("@pages/Shop"))
+const ProductDetails = lazy(()=>import("@pages/ProductDetail"))
 const About = lazy(()=>import("@pages/About"))
 const Contact = lazy(()=>import("@pages/Contact"))
 
@@ -23,6 +24,7 @@ function App() {
                 <Routes>
                   <Route path='/' exact element={<WebLayout element={<Home />} />} />
                   <Route path='/shop' element={<WebLayout element={<Shop />} />} />
+                  <Route path='/product/:id/:name' element={<WebLayout element={<ProductDetails />} />} />
                   <Route path='/about' element={<WebLayout element={<About />} />} />
                   <Route path='/contact' element={<WebLayout element={<Contact />} />} />
                 </Routes>
